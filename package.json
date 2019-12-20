@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Sigabort42/babel-plugin-dlp#readme",
   "dependencies": {
+    "@babel/core": "^7.7.7",
     "babel-plugin-tester": "^8.0.1"
   },
   "devDependencies": {
