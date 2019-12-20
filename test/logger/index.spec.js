@@ -4,9 +4,12 @@ const plugin = require("babel-plugin-dlp/src");
 
 const path = require("path");
 
-it('PluginTester', () => {
-  pluginTester.default({
-		plugin,
-		fixtures: path.join(__dirname, "fixtures")
-	})
-})
+pluginTester.default({
+  plugin,
+  tests: [
+    {
+      fixture: path.join(__dirname, "__fixtures__", "code.js"),
+      outputFixture: path.join(__dirname, "__fixtures__", "output.js")
+    }
+  ]
+});
